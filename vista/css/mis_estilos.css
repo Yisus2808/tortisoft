@@ -45,8 +45,8 @@ body {
 	margin: 0;
 	font-family: 'RobotoCondensedRegular';
 	font-size: 16px;
-	background: -webkit-linear-gradient(to bottom, rgb(0, 149, 255), rgb(2, 6, 83));
-	background: linear-gradient(to bottom, rgb(2, 6, 83), rgb(0, 149, 255));
+	/*background: -webkit-linear-gradient(to bottom, rgb(0, 149, 255), rgb(2, 6, 83));
+	background: linear-gradient(to bottom, rgb(2, 6, 83), rgb(0, 149, 255)); */
 }
 
 /* Estilos para el error */
