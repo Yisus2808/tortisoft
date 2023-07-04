@@ -1,2 +1,0 @@
-# tortisoft
-Proyecto de torilleria
