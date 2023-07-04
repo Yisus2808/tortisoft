@@ -8,13 +8,15 @@
 
         public function C_obtener_vistas() {     
 
-            if(isset($_GET['vistas'])) {
-                $ruta = explode('/',$_GET['vistas']);
-                $respuesta = M_vistas::M_obtener_vistas($ruta[0]);
+            if(isset($_GET['accion'])) {
+                $accion = $_GET['accion'];
             } else {
-                $respuesta = "principal";
+                $accion = "principal";
             }
-            return $respuesta;
+
+            $respuesta = M_vistas::M_obtener_vistas($accion);
+            
+            include $respuesta;
 
         }
 
