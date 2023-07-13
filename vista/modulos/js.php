@@ -37,5 +37,8 @@
 <!-- Typed para animar escritura -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
+<!-- Enlace de Sweetalert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <!-- Mis estilos js -->
 <script src="vista/js/main.js"></script>

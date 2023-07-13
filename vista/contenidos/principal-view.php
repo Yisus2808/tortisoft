@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TortiSoft</title>
-</head>
-<body>
-    Página principal
-</body>
-</html>
+<?php
+    if(!isset($_SESSION['correo'])){
+        header('Location: index.php?accion=login');
+    }
+    else{
+?>  
+    <h1>Bienvenid@ </h1> <?php echo $_SESSION['correo'] ?>
+    <br>
+    <a href="index.php?accion=cerrar_sesion" class="btn btn-danger" type="button">Cerrar sesión</a>
+<?php
+    }
+?>

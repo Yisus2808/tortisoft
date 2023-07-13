@@ -1,17 +1,17 @@
 <?php
     require_once "modelo/M_vistas.php";
-    class C_vistas extends M_vistas {
+    class C_vistas {
 
-        public function C_integrar_plantilla() {
-            return include "vista/plantilla.php";
+        static public function C_integrar_plantilla() {
+            include "vista/plantilla.php";
         }
 
-        public function C_obtener_vistas() {     
+        static public function C_obtener_vistas() {     
 
             if(isset($_GET['accion'])) {
                 $accion = $_GET['accion'];
             } else {
-                $accion = "principal";
+                $accion = "login";
             }
 
             $respuesta = M_vistas::M_obtener_vistas($accion);
